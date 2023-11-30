@@ -1,0 +1,23 @@
+{% extends "home.html" %}
+{% block title %}User Page{% endblock %}
+{% block content%}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form method="POST" action="/user">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name = "email" placeholder="name@example.com">
+            <label for="email">Email address</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password" name = "password" placeholder="Password">
+            <label for="password">Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+{% endblock%}

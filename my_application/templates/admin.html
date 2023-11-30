@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, 
+            initial-scale=1">
+            <title>
+            {% block title %}{% endblock %}
+            </title>
+        </head>
+        <body>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p>{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form method="POST" action="/admin">
+                <div class="form-floating mb-3">
+                    <input type="text" class="input is-large" name = "username" placeholder="username">
+                    <label for="username">username to delete</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </body>
+    </html>

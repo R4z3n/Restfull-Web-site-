@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+{% block title %}User Page{% endblock %}
+{% block content%}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form method="POST" action="/QnA">
+        <div class="container-fluid">
+            <input class="form-control" type="text" value="{{values}}" aria-label="readonly input example" readonly>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="answer" name = "answer" placeholder="text">
+            <label for="answer">Answer</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+{% endblock%}
