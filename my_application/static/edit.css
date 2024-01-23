@@ -1,0 +1,130 @@
+.edit-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(90deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 78.00%,rgb(0, 219, 222) 100.00%);
+}
+.edit-container1 {
+  flex: 0 0 auto;
+  width: 959px;
+  height: 727px;
+  display: flex;
+  position: relative;
+  box-shadow: 5px 5px 10px 0px rgba(6, 6, 6, 0.77);
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius50);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.edit-text {
+  color: #0c0c0c;
+  margin-top: 20px;
+}
+.edit-form {
+  top: 90px;
+  left: 93px;
+  width: 742px;
+  height: 428px;
+  display: flex;
+  position: absolute;
+}
+.edit-text1 {
+  top: 83px;
+  left: 190px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.edit-textinput {
+  top: 120px;
+  left: 186px;
+  color: #000000;
+  position: absolute;
+  border-color: #040404;
+  background-color: transparent;
+}
+.edit-text2 {
+  top: 168px;
+  left: 186px;
+  color: rgb(4, 4, 4);
+  position: absolute;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.edit-textinput1 {
+  top: 207px;
+  left: 187px;
+  position: absolute;
+  border-color: #080808;
+  background-color: transparent;
+}
+.edit-text3 {
+  left: 187px;
+  color: #020202;
+  bottom: 133px;
+  position: absolute;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.edit-textinput2 {
+  top: 289px;
+  left: 188px;
+  color: #000000;
+  position: absolute;
+  border-color: #060606;
+  background-color: transparent;
+}
+.edit-button {
+  left: 310px;
+  width: 194px;
+  bottom: 28px;
+  height: 44px;
+  position: absolute;
+  transition: 0.3s;
+  border-color: #000000;
+  background-color: transparent;
+}
+.edit-button:active {
+  transform: scale(0.96);
+  transition: all 0.2s ease;
+}
+.edit-text4 {
+  color: rgb(0, 0, 0);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.edit-form1 {
+  left: 469px;
+  width: 438px;
+  bottom: 54px;
+  height: 116px;
+  display: flex;
+  position: absolute;
+}
+.edit-button1 {
+  left: 186px;
+  color: rgb(4, 4, 4);
+  width: 164px;
+  bottom: 28px;
+  height: 46px;
+  position: absolute;
+  font-size: 1.25rem;
+  font-style: italic;
+  transition: 0.3s;
+  font-weight: 400;
+  border-color: #040404;
+  background-color: transparent;
+}
+.edit-button1:active {
+  transform: scale(0.96);
+  transition: all 0.2s ease;
+}
